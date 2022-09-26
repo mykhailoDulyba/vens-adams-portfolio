@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+ a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+ }
+ ol, ul {
+    list-style: none;
+ }
+ a:link{
+    color: white;
+    list-style: none; 
+ }
+ a { 
+    color: white; 
+    text-decoration:none;
+    list-style: none;
+ }    
+ section{
+    padding: 100px 0px;
+    overflow: hidden;
+ }
+ .section-title{
+    text-align: center;
+    margin-bottom: 45px;
+    position: relative;
+ }
+ .section-title h1,.section-title h2 {
+    font-size: 45px;
+    font-weight: 900;
+ }
+ .container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+ }

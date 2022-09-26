@@ -1,0 +1,143 @@
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+    align-items: center;
+    background: white;
+    width: 100%;
+    z-index: 2;
+}
+
+.portfolio-name {
+    margin-left: 70px;
+}
+
+.menu {
+    margin-right: 70px;
+}
+
+.menu-items {
+    display: flex;
+}
+
+.menu-items li {
+    padding-left: 30px;
+}
+
+/*-------Main Block Style--------*/
+
+main {
+    overflow: hidden;
+}
+
+.header-background {
+    margin-top: 125px;
+    position: relative;
+}
+
+.header-background img {
+    height: 100vh;
+}
+
+.new-album {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.new-album .title {
+    text-align: center;
+    color: #314e5d;
+}
+
+.album-img {
+    position: relative;
+}
+
+.album-img img{
+    width: 400px;
+    height: 400px;
+}
+
+.album-img button {
+    width: 220px;
+    height: 60px;
+    position: absolute;
+    left: 23%;
+    bottom: -25px;
+}
+
+.social{
+    margin-top: 50px;
+}
+
+.social ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*--------Relises----------------*/
+
+.all-releases h2, .about-me h2, .contact h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.releases {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1880px;
+    margin: auto;
+}
+
+.releases .album {
+    margin-right: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.releases .album h3 {
+    margin-top: 10px;
+}
+
+.releases .album p {
+    margin-top: 10px;
+
+}
+
+.releases .album button {
+    margin-top: 10px;
+    width: 220px;
+    align-self: center;
+    height: 45px;
+}
+
+/*---------ABOUT--------------*/
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about img {
+    width: 555px;
+    height: 512px;
+}
+
+.about .text {
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+/***---------------CONTACT ------------*/
+
+
+
+
+
