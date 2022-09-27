@@ -18,10 +18,10 @@
         <div class="logo">V/A</div>
         <div class="menu">
             <ul class="menu-items">
-                <li>Home</li>
-                <li>Bio</li>
-                <li>Music</li>
-                <li>Relozec</li>
+                <li>HOME</li>
+                <li>RELEASES</li>
+                <li>BIO</li>
+                <li>CONTACT</li>
             </ul>
         </div>
     </header>
@@ -30,25 +30,25 @@
         <div class="header-background">
             <img src="./imgs//header-img.jpg" alt="">
             <div class="new-album">
-                <div class="title"> New Relisez</div>
+                <div class="title">NEW ALBUM OUT NOW</div>
                 <div class="album-img">
                     <img src="./imgs/header-album.jpg" alt="">
                     <button> Play Now</button>
                 </div>
                 <div class="social">
                     <ul>
-                        <li>F</li>
-                        <li>B</li>
-                        <li>S</li>
-                        <li>R</li>
-                        <li>T</li>
+                        <li><img src="./css/facebook.svg" alt=""></li>
+                        <li><img src="./css/instagram.svg" alt=""></li>
+                        <li><img src="./css/soundcloud.svg" alt=""></li>
+                        <li><img src="./css/youtube.svg" alt=""></li>
+                        <li><img src="./css/spotify.svg" alt=""></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="all-releases">
-            <h2>All Releases</h2>
+            <h2>ALL RELEASES</h2>
             <div class="releases">
                 <div class="album">
                     <img src="./imgs/header-album.jpg" alt="">
@@ -95,41 +95,56 @@
             </div>
         </div>
         <div class="about-me">
-            <h2>B I O</h2>
+            <h2>BIO</h2>
             <div class="about">
-                <img src="./imgs//header-img.jpg" alt="">
+                <img src="./imgs/me.jpg" alt="">
                 <div class="text">
-                    <h3>BIO</h3>
+                    <h3>A little story about me.</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                         Dignissimos placeat aut id! Cupiditate veritatis qui dicta, qu
-                        ia, nam minima neque rerum in, animi voluptas corrupti recusandae laboriosam fuga eos similique!</p>
+                        ia, nam minima neque rerum in, animi voluptas corrupti recusandae laboriosam fuga eos similique!                        
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Dignissimos placeat aut id! Cupiditate veritatis qui dicta, qu
+                                ia, nam minima neque rerum in, animi voluptas corrupti recusandae laboriosam fuga eos similique!
+                            </p>
+                        </p>
                 </div>
             </div>
         </div>
 
         <div class="contact">
-            <h2>Contact me</h2>
+            <h2>CONTACT ME</h2>
             <form id="form">
-                <div>
-                    <label for="">
-                        <input type="text" name="" id="">
-                    </label>
-                    <label for="">
-                        <input type="text" name="" id="">
-                    </label>
+                <div class="name-info">
+                    <div class="inputBox">
+                        <div class="inputText">Name</div>
+                        <input type="text " class="input" name="name" placeholder=""  required>
+                    </div>
+                    <div class="inputBox">
+                        <div class="inputText">Last Name</div>
+                        <input  class="input"  type="email" name="email" placeholder="" required="">
+                    </div>
                 </div>
-                <div>
-                    <label for="">
-                        <input type="text" name="" id="">
-                    </label>
+                <div class="email-info">
+                    <div class="inputBox">
+                        <div class="inputText">Email</div>
+                        <input  class="input" type="email" name="email" placeholder="" required="">
+                    </div>
                 </div>
-                <div>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="inputBox message">
+                    <div class="inputText ">Message</div>
+                    <textarea  class="input" name="text" required></textarea>
                 </div>
-                <button> Submit</button>
+                <div class="btn-send">
+                    <button type="submit"  class="button-send"><span>Send</span> </button>  
+                </div>               
              </form>
         </div>
     </main>
+
+    <footer>
+        <p>Vebs Adams Audio </p>
+    </footer>
 
     <script src="./js/scripts.js"></script>
 </body>

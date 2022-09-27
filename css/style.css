@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 header {
     position: fixed;
     display: flex;
@@ -11,6 +12,18 @@ header {
 
 .portfolio-name {
     margin-left: 70px;
+    color: #314E5D;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 29px;
+}
+
+.logo {
+    color: #ffffff;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 26px;
+    background: #314E5D;
+    padding: 26px;
+    border-radius: 62%;
 }
 
 .menu {
@@ -23,6 +36,10 @@ header {
 
 .menu-items li {
     padding-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #314e5d;
+    font-size: 14px;
 }
 
 /*-------Main Block Style--------*/
@@ -40,6 +57,10 @@ main {
     height: 100vh;
 }
 
+.social ul li img {
+    height: 120%;
+}
+
 .new-album {
     width: 400px;
     height: 400px;
@@ -50,7 +71,10 @@ main {
 
 .new-album .title {
     text-align: center;
-    color: #314e5d;
+    margin-bottom: 15px;
+    color: #314E5D;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 29px;
 }
 
 .album-img {
@@ -68,6 +92,12 @@ main {
     position: absolute;
     left: 23%;
     bottom: -25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 20px;
+    background: #314e5d;
+    border: none;
 }
 
 .social{
@@ -85,6 +115,10 @@ main {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: #314E5D;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 29px;
+    letter-spacing: 3px;
 }
 
 .releases {
@@ -104,18 +138,30 @@ main {
 
 .releases .album h3 {
     margin-top: 10px;
+    color: #314E5D;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 23px;
+    letter-spacing: 2px;
 }
 
 .releases .album p {
     margin-top: 10px;
-
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
 }
 
 .releases .album button {
     margin-top: 10px;
-    width: 220px;
+    width: 210px;
     align-self: center;
     height: 45px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 16px;
+    background: #314e5d;
+    border: none;
 }
 
 /*---------ABOUT--------------*/
@@ -135,8 +181,103 @@ main {
     margin-left: 50px;
 }
 
-/***---------------CONTACT ------------*/
+.about .text h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
 
+.about .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/***---------------CONTACT ------------*/
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-info {
+    display: flex;
+}
+
+.name-info > div {
+    margin-right: 20px;
+}
+
+.email-info, .message  {
+    width: 500px;
+}
+
+
+.inputBox {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+.input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 2px solid rgba(0,0,0,.2);
+}
+.inputText{
+    position: absolute;
+    line-height: 50px;
+    font-size: 16px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    opacity: .5;
+}
+.focus .inputText {
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+    font-size: 14px;
+    opacity: 1;
+    color: #000;
+    }
+.focus .input {
+    border-bottom: 2px solid rgba(27,161,96,.8);
+}
+textarea {
+    height: 100px !important;
+    line-height:  45px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.button-send {
+    border: none;
+    background: #314E5D;
+    padding: 15px 50px 15px 50px;
+    color: white;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
 
 
 
