@@ -1,0 +1,1041 @@
+ /*************************************
+
+Template Name: Sample - Personal Portfolio Template
+Author: Mike
+Version: 1.0
+Design and Developed by: Mike
+
+NOTE: This is main stylesheet of the template.
+
+****************************************/
+
+ /*================================================
+            Table of contents  
+==================================================
+ 
+1 BASE CSS
+  - Section Title
+2 PRELOADER
+3 HEADER AREA
+  - Logo
+  - Navbar
+  - Touch-menu
+4 HOME AREA
+  - Main down and Overlay
+  - Slider area options
+  - Home-text
+5 ABOUT AREA
+  - Social-links
+  - About-text
+  - Progres Bar
+ 6 WHAT I OFFER
+ 7 GALLERY 
+  - Buttons
+  - Image
+  - Gallery magnific-popup
+ 8 TESTIMONIAL AREA   
+ 9 CONTACT INFO AREA
+   - Button-send
+ 10 FOOTER AREA
+ 11 MEDIA QUERY 992px
+   - Base css
+   - Main-menu
+   - Touch-menu
+   - Logo
+   - Home-text
+   - Contact form
+    MEDIA QUERY 580px
+   - Home-text 
+
+
+====================================================
+            End table content 
+===================================================*/
+
+ /*================================================
+             1 BASE CSS
+==================================================*/
+
+
+header .main-menu {
+   width: 100%;
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+a:hover {
+   text-decoration: none;
+   list-style: none;
+   color: white;
+}
+ol, ul {
+   list-style: none;
+}
+a:link{
+   color: white;
+   list-style: none; 
+}
+a { 
+   color: white; 
+   text-decoration:none;
+   list-style: none;
+}    
+section{
+   padding: 100px 0px;
+   overflow: hidden;
+}
+.section-title{
+   text-align: center;
+   margin-bottom: 45px;
+   position: relative;
+}
+.section-title h1,.section-title h2 {
+   font-size: 45px;
+   font-weight: 900;
+}
+.container-fluid{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+/*================================================
+             2 PRELOADER
+==================================================*/
+
+.preloader{
+   position: fixed;
+   top:0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #ffffff;
+   z-index: 99;
+   -webkit-transition: 1s all;
+   -moz-transition: 1s all;
+   -o-transition: 1s all;
+   transition: 1s all;
+   opacity: 1;
+   visibility: visible;
+}
+.preloader h3{ 
+   text-align: center;
+   position: absolute;
+   top:58%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   font-family: 'Dancing Script', cursive;
+   -webkit-transition: 1s all;
+   -moz-transition: 1s all;
+   -o-transition: 1s all;
+   transition: 1s all;
+}
+.loader{
+   width: 75px;
+   height: 75px;
+   border: 10px solid white;
+   border-radius: 50%;
+   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 30px;
+   border-top-color: #000000;
+   position: absolute;
+   left: 50%;
+   top:50%;
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   -webkit-animation: 1s spin infinite linear;
+   -moz-animation: 1s spin infinite linear;
+   -o-animation: 1s spin infinite linear; 
+   animation: 1s spin infinite linear;
+}
+.done.preloader {
+   opacity: 0;
+   visibility: hidden;
+}
+@keyframes spin{
+  from{
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+   
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/*================================================
+              3 HEADER AREA
+==================================================*/
+
+.header-top-area{
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+.header-top-area.sticky {
+  position: fixed;
+}
+.main-menu {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background: rgba(255,255,255,0.0);
+  overflow: hidden;
+  opacity: 1;
+  top: 0;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 14px;
+}
+.sticky .main-menu{
+  background: rgba(255, 255, 255, 0.99);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 30px;
+}
+.sticky .main-menu ul li a {
+  padding: 21px 20px;
+  border-bottom: 1px solid transparent;
+  color: #333333;
+}
+.sticky .main-menu ul li a:hover{
+  background: rgba(0,0,0,.05);
+}
+
+/*------------------------Logo----------------------------*/
+
+.logo {
+  position: relative;
+  text-align: center;
+  width: 30%;
+  float: left;
+  margin-top: 23px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.logo a{
+  line-height: 1;
+  color: #ffffff;
+  display: block;
+  font-size: 30px;
+  padding:0px 0 21px;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 2px;
+  text-decoration:none;
+  list-style: none;
+}
+.sticky .logo {
+  margin-top: 16px;
+}
+.sticky .logo a {
+  padding: 0px 0 16px;
+  color: #333333;
+}
+
+/*------------------------Navbar----------------------------*/
+.nav {
+  float: right;
+}
+.nav li {
+  float: left;
+}
+.nav li a {
+  color: #fff;
+  display: block;
+  font-weight: 300;
+  padding: 31px 20px ;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;  
+  text-decoration:none;
+  list-style: none;
+}
+
+/*------------------------Touch-menu---------------------------*/
+
+.touch-menu {
+  display: none;
+  text-align: center;
+  padding: 21px 0 20px;
+  font-size: 28px;
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+  overflow: hidden;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}  
+.sticky .touch-menu{
+  color: #333333;
+}
+ 
+/*================================================
+              4 HOME AREA
+==================================================*/
+
+/*--------------------Main down and Overlay--------------*/
+
+.main-down {
+  position: absolute;
+  color: #fff;
+  z-index: 4;
+  bottom: 30px;
+  display: inline-block;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid transparent;
+  line-height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.main-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.45);
+}
+
+/*--------------------Slider area options--------------------*/
+
+.slider-area{
+  overflow: hidden;
+}
+.slider-title {
+  display: table;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  }
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.table-cell h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 70px;
+}
+.table-cell p {
+  color: #ffffff;
+  font-size: 26px;
+}
+.single-slider{
+  text-align: center;
+  opacity: 1;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*----------------------Home-text---------------------------*/
+
+.home-text-area{
+  padding-top: 77px;
+}
+.home-text h1{
+  color: #fff;
+  font-weight: 900;
+  font-size: 71px;
+}
+.home-text .hello {
+  line-height: 0.1; 
+  opacity: 0.3;
+  font-size: 50px;
+  font-family: 'Great Vibes', cursive;
+  padding-bottom: 15px;
+}
+.home-text h3{
+  font-family: 'Montserrat', sans-serif;
+  padding: 7px;
+  background-color: #ffffff;
+  display:  inline-block;
+  color: #000;
+  padding-left: 33px;
+  padding-right: 33px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/*--------Relises----------------*/
+
+.all-releases h2 {
+  margin-bottom: 45px;
+}
+
+.releases {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1411px;
+  margin: auto;
+}
+
+.releases .album {
+  margin-right: 70px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgb(0 0 0 / 13%) 0px 0px 30px;
+}
+
+.releases .album img {
+  width: 400px;
+}
+
+
+.releases .album h3 {
+  margin-top: 10px;
+  color: #292929;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+.releases .album p {
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.releases .album button {
+  margin-top: 10px;
+  width: 210px;
+  align-self: center;
+  height: 45px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 16px;
+  background: #292929;
+  border: none;
+  margin-bottom: 20px;
+}
+
+/*================================================
+              4 ABOUT AREA
+==================================================*/
+  
+.about-img{
+  position: relative;
+  cursor: pointer;
+}
+.about-img img{
+  width: 100%;
+  height: 100%;
+  vertical-align: center;
+}
+.about-img-links{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top:540;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0.5;
+}
+.about-img-links h2{
+  color: #fff;
+  font-size: 25px;
+  border: 5px solid #fff;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+/*---------------------Social-links------------------------*/
+
+.social-links ul li{
+  display: inline-block;
+}
+
+.social-links ul li a {
+  font-size: 18px;
+  color: #fff;
+  margin: 25px 10px;
+  display: block;
+  transition: .3s;
+
+}
+.social-links ul{
+  margin-top: 10px;
+}
+.about-img:hover .about-img-links{
+  opacity: 1;
+}
+.social-links ul li a:hover {
+ text-shadow: 0px 1px 8px white;
+
+}
+/*----------------------About-text---------------------------*/
+
+.about-text h2{
+  font-size: 26px;
+  margin-top: 5px;
+  text-align: center;
+  color: #232323;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+}
+.about-text p{
+  text-align: center;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  margin-bottom: 20px;
+}
+
+/*----------------------Progres Bar--------------------------*/
+.wrap-skills{
+  padding-top: 20px;
+}
+.wraper{  
+  width: 100%;
+}
+.wraper h1{
+  color: #fff;
+}
+.wraper .skills{
+  position: relative;
+  padding: 10px 20px;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  margin: 10px 0;
+}
+.wraper .skills h5{
+  margin:0;
+  padding: 0;
+  color: #333333;
+  float: left;
+  font-weight: 700;
+}
+.wraper .skills .persent{
+  float: right;
+  color: #333333;
+}
+.wraper .skills .skill-bar{
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: rgba(0,0,0,0.1);
+  margin: 15px 0 10px;
+}
+.wraper .skills .skill-bar .progress-bar{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 81%;
+  height: 100%;
+  background: linear-gradient(to right, #E6E6E6, #808080 );
+}
+.wraper .skills .skill-bar .progress-bar:before{
+  content: "";
+  position: absolute;
+  top:-5px; 
+  right: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,1);
+}
+
+/*================================================
+              5 WHAT I OFFER
+==================================================*/
+
+.offer-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single-service{
+  padding: 23px 19px 38px;
+  margin: 7px 7px 15px 7px;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 0px 30px;
+  text-align: center;
+  min-width: 150px;
+  max-width: 500px;
+  max-height: 360px;
+  width: 100%;
+  height: auto;
+}
+.single-service i {
+  font-size: 40px;
+  border-radius: 20%;
+  background: rgba(167, 165, 165, 0.15);
+  height: 80px;
+  width: 80px;
+  color: #404040;
+  line-height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 30px;
+}
+.single-service h2 a{
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  color: #232323;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+.single-service p {
+  color: #232323;
+  margin: 0 0 0px;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+/*================================================
+              6 GALLERY
+==================================================*/
+   
+/*---------------------Buttons--------------------------*/
+
+.ul
+{
+  margin-bottom: 30px;
+}
+ul .ul{
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 30px;
+}
+ul.ul li{
+  display: inline-block;
+  padding: 10px  15px 10px;
+  margin: 0 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+.ul li:hover,  .activer{
+  color: #000;
+  border: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 30px;
+}
+
+/*---------------------Image------------------------------*/
+
+.grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+.item-img{
+  padding: 1px;  
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work .item-img figure  {
+  min-width: 150px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 100%;
+  height: auto;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  border-radius: 0px;
+  overflow: hidden; 
+}
+.work .col-md-4{
+  padding: 0;
+  margin: 0;
+}
+.gallery-img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.gallery-img:hover .gallery-overlayer{
+  width: 100%;
+}
+.gallery-img img{
+  width: 100%;
+  height: 100%;
+}
+.gallery-overlayer{
+  width: 0%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
+  -o-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+.gallery-overlayer i{
+  color: #fff;
+  font-size: 25px;
+}
+
+/*-----------------Gallery magnific-popup----------------------*/
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transform: scale(0) rotate(90deg);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+/*================================================
+             8 TESTIMONIAL AREA
+==================================================*/
+
+.carousel{
+  margin-top: 50px;
+}
+.owl-carousel{
+  padding-top: 5px;
+}
+.carousel-item
+{
+  text-align: center;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 20px;
+}
+.carousel-item img{
+  display: inline-block!important;
+  width: 100px !important;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 30px;
+}
+.carousel-item p{
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+}
+
+/*================================================
+             9 CONTACT INFO AREA
+==================================================*/  
+
+.contact-title{
+  text-align: center;
+  margin-bottom: 45px;
+  position: relative;
+}
+.contact-title h2 {
+  margin-bottom: 30px; 
+  font-size: 45px;
+  font-weight: 900;
+}
+.contact-title p {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+.contact-icon-text{
+  margin-bottom: 50px;
+  font-family: 'Dancing Script', cursive;
+}
+.form-icon {
+  font-size: 40px;
+  background: #F5F5F5;
+  height: 80px;
+  width: 80px;
+  border-radius: 20%;
+  text-align: center;
+  color: #404040;
+  line-height: 80px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 30px;
+}
+.formBox{
+  padding: 50px;
+}
+.inputBox{
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+.input{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-bottom: 2px solid rgba(0,0,0,.2);
+}
+.inputText{
+  position: absolute;
+  line-height: 50px;
+  font-size: 16px;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  opacity: .5;
+}
+ .focus .inputText{
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
+  transform: translateY(-30px);
+  font-size: 14px;
+  opacity: 1;
+  color: #000;
+}
+.focus .input{
+  border-bottom: 2px solid rgba(27,161,96,.8);
+}
+textarea{
+  height: 100px !important;
+  line-height:  45px;
+}
+
+/*-----------------------Button-send----------------------*/
+
+.button-send{
+  border: none;
+  background: transparent;
+}
+.button-send span{
+  padding:15px 30px 15px 30px;
+  width: 50%;
+  background: rgba(0,0,0,.5);  
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 30px;
+  outline: none;
+  height: 50px;
+  color: #fff;
+  transition: 1s;
+  position: relative;
+}
+.button-send span:before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #525252;
+  z-index: -1;
+  transition: 1s;
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -o-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+.button-send span:hover:before{
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+/*================================================
+             10 FOOTER AREA
+==================================================*/ 
+
+footer .social-links ul li a {
+  color: rgba(39,40,34,1);
+}
+footer .social-links ul li a:hover {
+  text-shadow: 0px 0px 20px black;
+}
+/*================================================
+             11 MEDIA QUERY
+==================================================*/ 
+
+@media all and (max-width: 992px){
+
+/*------------------------Basic-----------------------*/
+
+  .section-title h1,.section-title h2 {
+     font-size: 33px;
+  }
+/*-----------------------Main-menu--------------------*/
+
+  .main-menu {
+    overflow: visible;
+  }
+  .sticky .main-menu ul li a {
+    padding: 15px 30px;
+  }
+  .sticky .main-menu ul li a:hover {
+    background: rgba(255,255,255,0.8);
+    color: #000;
+    text-decoration-line:  none;
+    padding: 15px 80px;
+    border-bottom: 1px solid transparent;
+  }
+  .nav {
+    position: absolute;  
+    top: -485%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: 0.5s;
+  }
+  .nav_active {
+    top: 100%;
+  }
+  .nav li {
+    float: none;
+  }
+  .nav li a {
+    border-top: 1px solid #eee;
+    border-left: 3px solid transparent;
+    background: rgba(255,255,255,0.9);
+    border-bottom: 1px solid transparent;
+    color: #000;
+    font-weight: 700;
+    padding: 15px 30px;
+  }
+  .nav:after{
+    content: "";
+    height: 1px;
+    background: #000;
+    width: 70%;
+    margin-left: 20%;
+    display: block;
+    clear: both;  
+    box-shadow: 1px 3px 12px 1px black;
+  }
+
+/*--------------------Touch-menu----------------------*/
+
+  .touch-menu {
+    display: block;
+  }
+/*---------------------Logo---------------------------*/
+
+  .logo{
+    width: 75%;
+  }
+  .sticky .logo {
+    margin-top: 18px;
+   }
+   .sticky .logo a {
+    padding:0px 0 21px;
+   }
+
+/*--------------------Home-text------------------------*/
+
+  .home-text h1{
+    font-size: 44px;
+  }
+  .home-text h3{
+    font-size: 10px;
+  }
+  .contact-title h2 {
+    font-size: 33px;
+  }
+
+ /*-------------------Contact Form---------------------*/
+
+  .form-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50px;
+    color: #404040;
+    line-height: 46px;
+  } 
+
+}
+
+/*====================== MEDIA QUERY 580px =============*/
+
+@media all and (max-width: 580px){
+
+/*------------------------Home text --------------------*/
+  .home-text h1{
+    font-size: 32px;
+  }
+  .home-text h3{
+    font-size: 9px;        
+  }
+  .home-text .hello {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
