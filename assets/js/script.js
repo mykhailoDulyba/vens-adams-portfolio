@@ -1,6 +1,5 @@
 /*=========================================
 
-Template Name: Sample - Personal Portfolio Template
 Author: Mike
 Version: 1.0
 Design and Developed by: Mike
@@ -87,27 +86,6 @@ new WOW().init();
     e.preventDefault();
   });
 
-/*=============================
-        Gallery filter
-==============================*/
- 
-    $(".button").click(function(){
-      var value = $(this).attr("data-filter");
-      if (value == "all")
-      {
-        $(".filter").show("1000");
-      }
-      else
-      {
-        $(".filter").not("."+value).hide("1000");
-        $(".filter").filter("."+value).show("1000");
-      }
-    });
-        //Active class
-        $(".ul .button").click(function(){
-          $(this).addClass('activer').siblings().removeClass('activer');
-
-        });
 
 /*=============================
     Gallery magnific-popup
@@ -122,24 +100,6 @@ new WOW().init();
           mainClass: 'mfp-fade'
           // other options
         });
-
-
-/*=============================
-   Owl carousel testimonial
-==============================*/
-   
-            var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            autoplay:true,
-            items:1,
-            loop:true,
-            margin:10,
-            center:true,
-            stagePadding:30,
-            smartSpeed:1000
-
-        });
- $(".owl-carousel").owlCarousel()
 
 
 /*=============================
