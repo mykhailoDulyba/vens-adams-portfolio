@@ -378,7 +378,23 @@ section{
   font-weight: 700;
 }
 
+.icons-for-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-for-header a svg {
+  width: 24px;
+  margin-left: 15px;
+}
 /*--------Relises----------------*/
+.all-releases {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .all-releases h2 {
   margin-bottom: 45px;
@@ -388,7 +404,7 @@ section{
   display: flex;
   flex-wrap: wrap;
   max-width: 1411px;
-  margin: auto;
+  justify-content: center;
 }
 
 .releases .album {
@@ -462,7 +478,7 @@ section{
   -moz-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
-  opacity: 0.5;
+  opacity: 1;
 }
 .about-img-links h2{
   color: #fff;
@@ -474,7 +490,11 @@ section{
 }
 
 /*---------------------Social-links------------------------*/
-
+.social-links ul{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .social-links ul li{
   display: inline-block;
 }
@@ -484,8 +504,10 @@ section{
   color: #fff;
   margin: 25px 10px;
   display: block;
-  transition: .3s;
-
+  text-shadow: 0px 1px 8px white;
+}
+.social-links ul li a svg {
+  width: 24px;
 }
 .social-links ul{
   margin-top: 10px;
@@ -493,11 +515,17 @@ section{
 .about-img:hover .about-img-links{
   opacity: 1;
 }
-.social-links ul li a:hover {
+/* .social-links ul li a:hover {
  text-shadow: 0px 1px 8px white;
 
-}
+} */
 /*----------------------About-text---------------------------*/
+.about-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 .about-text h2{
   font-size: 26px;
@@ -512,6 +540,8 @@ section{
   text-align: center;
   font-family: 'Saira Semi Condensed', sans-serif;
   margin-bottom: 20px;
+  font-size: 16px;
+  max-width: 476px;
 }
 
 /*----------------------Progres Bar--------------------------*/
@@ -521,6 +551,60 @@ section{
 .wraper{  
   width: 100%;
 }
+.license {
+  transform: scale(1);
+  box-shadow: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.license:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 13%) 0px 0px 30px;  
+}
+
+.wraper .license{
+    font-weight: 600;
+    border: 2px solid #c4bebe;
+    padding: 12px 15px 12px 18px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.license p{
+  margin: 0;
+  color: #000;
+}
+
+.wraper .license .license-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wraper .license .license-icon img{
+  width: 21px;
+  height: 21px;
+}
+
+.wraper .license .license-icon p{
+  margin: 0;
+  padding-left: 3px;
+}
+
+.license .color-vine {
+  color: #ff5f6e;
+}
+.license .motion-array{
+  color: #534cda;
+}
+.license .jungle {
+  color: #719f3a;
+}
+
+
+
 .wraper h1{
   color: #fff;
 }
@@ -617,37 +701,11 @@ section{
               6 GALLERY
 ==================================================*/
    
-/*---------------------Buttons--------------------------*/
-
-.ul
-{
-  margin-bottom: 30px;
-}
-ul .ul{
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  margin-bottom: 30px;
-}
-ul.ul li{
-  display: inline-block;
-  padding: 10px  15px 10px;
-  margin: 0 0px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  color: #000000;
-  cursor: pointer;
-  border: 1px solid transparent;
-  font-family: 'Saira Semi Condensed', sans-serif;
-}
-.ul li:hover,  .activer{
-  color: #000;
-  border: 1px solid transparent;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 30px;
-}
-
 /*---------------------Image------------------------------*/
+
+.work-iner{
+  margin-bottom: 45px;
+}
 
 .grid {
   position: relative;
@@ -657,11 +715,12 @@ ul.ul li{
   text-align: center;
 }
 .item-img{
-  padding: 1px;  
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 0px 10px 0;
+  box-shadow: rgb(0 0 0 / 13%) 0px 0px 30px;
 }
 .work .item-img figure  {
   min-width: 150px;
